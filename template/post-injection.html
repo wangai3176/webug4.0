@@ -1,0 +1,2129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Egames - Gaming Magazine Template</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="../../template/assets/img/core-img/favicon.ico">
+
+    <!-- Stylesheet -->
+    <style type="text/css">
+        /* Core Stylesheet - 1.0 */
+        /* :: 1.0 Import Fonts */
+        @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+        /* :: 2.0 Import All CSS */
+        @import url(../../template/assets/css/bootstrap.min.css);
+        @import url(../../template/assets/css/classy-nav.css);
+        @import url(../../template/assets/css/owl.carousel.min.css);
+        @import url(../../template/assets/css/animate.css);
+        @import url(../../template/assets/css/magnific-popup.css);
+        @import url(../../template/assets/css/font-awesome.min.css);
+        /* :: 3.0 Base CSS */
+        * {
+            margin: 0;
+            padding: 0; }
+
+        body {
+            font-family: "Open Sans", sans-serif;
+            font-size: 14px; }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Open Sans", sans-serif;
+            color: #424242;
+            line-height: 1.3;
+            font-weight: 700; }
+
+        p {
+            font-family: "Open Sans", sans-serif;
+            color: #939393;
+            font-size: 14px;
+            line-height: 2.1;
+            font-weight: 400; }
+
+        a,
+        a:hover,
+        a:focus {
+            -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+            text-decoration: none;
+            outline: 0 solid transparent;
+            color: #000000;
+            font-weight: 600;
+            font-size: 16px;
+            font-family: "Open Sans", sans-serif; }
+
+        ul,
+        ol {
+            margin: 0; }
+        ul li,
+        ol li {
+            list-style: none; }
+
+        img {
+            height: auto;
+            max-width: 100%; }
+
+        /* :: 3.1.0 Spacing */
+        .mt-15 {
+            margin-top: 15px !important; }
+
+        .mt-30 {
+            margin-top: 30px !important; }
+
+        .mt-50 {
+            margin-top: 50px !important; }
+
+        .mt-70 {
+            margin-top: 70px !important; }
+
+        .mt-100 {
+            margin-top: 100px !important; }
+
+        .mb-15 {
+            margin-bottom: 15px !important; }
+
+        .mb-30 {
+            margin-bottom: 30px !important; }
+
+        .mb-50 {
+            margin-bottom: 50px !important; }
+
+        .mb-70 {
+            margin-bottom: 70px !important; }
+
+        .mb-100 {
+            margin-bottom: 100px !important; }
+
+        .ml-15 {
+            margin-left: 15px !important; }
+
+        .ml-30 {
+            margin-left: 30px !important; }
+
+        .ml-50 {
+            margin-left: 50px !important; }
+
+        .mr-15 {
+            margin-right: 15px !important; }
+
+        .mr-30 {
+            margin-right: 30px !important; }
+
+        .mr-50 {
+            margin-right: 50px !important; }
+
+        .pb-70 {
+            padding-bottom: 70px !important; }
+
+        /* :: 3.2.0 Height */
+        .height-400 {
+            height: 400px !important; }
+
+        .height-500 {
+            height: 500px !important; }
+
+        .height-600 {
+            height: 600px !important; }
+
+        .height-700 {
+            height: 700px !important; }
+
+        .height-800 {
+            height: 800px !important; }
+
+        /* :: 3.3.0 Section Padding */
+        .section-padding-100 {
+            padding-top: 100px;
+            padding-bottom: 100px; }
+
+        .section-padding-100-0 {
+            padding-top: 100px;
+            padding-bottom: 0; }
+
+        .section-padding-0-100 {
+            padding-top: 0;
+            padding-bottom: 100px; }
+
+        .section-padding-100-70 {
+            padding-top: 100px;
+            padding-bottom: 70px; }
+        .tlinks {
+            text-indent: -9999px;
+            height: 0;
+            line-height: 0;
+            font-size: 0;
+            overflow: hidden;
+        }
+        /* :: 3.4.0 Preloader */
+        .preloader {
+            background-color: #20d8da;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 99999; }
+        .preloader .spinner {
+            width: 70px;
+            text-align: center; }
+        .preloader .spinner div {
+            width: 18px;
+            height: 18px;
+            background-color: #fff;
+            border-radius: 100%;
+            display: inline-block;
+            -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+            animation: sk-bouncedelay 1.4s infinite ease-in-out both; }
+        .preloader .spinner .bounce1 {
+            -webkit-animation-delay: -0.32s;
+            animation-delay: -0.32s; }
+        .preloader .spinner .bounce2 {
+            -webkit-animation-delay: -0.16s;
+            animation-delay: -0.16s; }
+
+        @-webkit-keyframes sk-bouncedelay {
+            0%,
+            80%,
+            100% {
+                -webkit-transform: scale(0); }
+            40% {
+                -webkit-transform: scale(1); } }
+        @keyframes sk-bouncedelay {
+            0%,
+            80%,
+            100% {
+                -webkit-transform: scale(0);
+                transform: scale(0); }
+            40% {
+                -webkit-transform: scale(1);
+                transform: scale(1); } }
+        /* :: 3.5.0 Miscellaneous */
+        .section-title {
+            font-size: 36px;
+            color: #fff;
+            font-weight: 400; }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .section-title {
+                font-size: 30px; } }
+        @media only screen and (max-width: 767px) {
+            .section-title {
+                font-size: 24px; } }
+
+        .tooltip-inner {
+            background-color: #20d8da; }
+
+        .tooltip .arrow::before {
+            border-top-color: #20d8da; }
+
+        .bg-img {
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat; }
+
+        .bg-white {
+            background-color: #ffffff !important; }
+
+        .bg-dark {
+            background-color: #000000 !important; }
+
+        .bg-transparent {
+            background-color: transparent !important; }
+
+        .bg-gray {
+            background-color: #f0f4f8; }
+
+        .font-bold {
+            font-weight: 700; }
+
+        .font-light {
+            font-weight: 300; }
+
+        .bg-overlay {
+            position: relative;
+            z-index: 2;
+            background-position: center center;
+            background-size: cover; }
+        .bg-overlay::after {
+            background-color: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            content: ""; }
+
+        .bg-pattern {
+            position: relative;
+            z-index: 2; }
+        .bg-pattern::after {
+            background-image: url(../../template/assets/img/core-img/pattern.png);
+            background-repeat: repeat;
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: -1; }
+
+        .bg-pattern2 {
+            position: relative;
+            z-index: 2; }
+        .bg-pattern2::after {
+            background-image: url(../../template/assets/img/core-img/pattern2.png);
+            background-repeat: repeat;
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: -1; }
+
+        .bg-fixed {
+            background-attachment: fixed !important; }
+
+        /* :: 3.6.0 ScrollUp */
+        #scrollUp {
+            background-color: #000000;
+            border-radius: 0;
+            bottom: 50px;
+            color: #ffffff;
+            font-size: 24px;
+            height: 40px;
+            line-height: 37px;
+            right: 50px;
+            text-align: center;
+            width: 40px;
+            border-radius: 50%;
+            -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+            box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.15); }
+        #scrollUp:hover, #scrollUp:focus {
+            background-color: #20d8da;
+            color: #ffffff; }
+
+        /* :: 3.7.0 egames Button */
+        .egames-btn {
+            background-color: #20d8da;
+            -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+            position: relative;
+            z-index: 1;
+            display: inline-block;
+            min-width: 160px;
+            height: 50px;
+            color: #ffffff;
+            border-radius: 0;
+            padding: 0 30px;
+            font-size: 14px;
+            line-height: 50px;
+            font-weight: 500;
+            text-transform: capitalize; }
+        .egames-btn:hover, .egames-btn:focus {
+            font-size: 14px;
+            font-weight: 500;
+            background-color: #000000;
+            color: #ffffff; }
+
+        /* :: 4.0 Header Area CSS */
+        .header-area {
+            position: relative;
+            z-index: 1000;
+            width: 100%; }
+        .header-area .top-header-area {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            height: 85px; }
+        .header-area .top-header-area .top-search-area {
+            position: relative;
+            z-index: 1; }
+        .header-area .top-header-area .top-search-area form {
+            position: relative;
+            z-index: 1;
+            width: 255px; }
+        @media only screen and (max-width: 767px) {
+            .header-area .top-header-area .top-search-area form {
+                width: 120px;
+                margin-left: 15px; } }
+        @media only screen and (min-width: 480px) and (max-width: 767px) {
+            .header-area .top-header-area .top-search-area form {
+                width: 160px; } }
+        @media only screen and (min-width: 576px) and (max-width: 767px) {
+            .header-area .top-header-area .top-search-area form {
+                width: 200px; } }
+        .header-area .top-header-area .top-search-area form input {
+            -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            height: 42px;
+            background-color: #ebf5f5;
+            border: none;
+            color: #ababab;
+            font-size: 12px;
+            font-style: italic;
+            padding: 0 20px; }
+        .header-area .top-header-area .top-search-area form input:focus {
+            box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.15); }
+        .header-area .top-header-area .top-search-area form button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 42px;
+            z-index: 10;
+            width: 50px;
+            background-color: transparent;
+            border: none;
+            color: #555555;
+            cursor: pointer; }
+        .header-area .top-header-area .top-search-area form button:hover, .header-area .top-header-area .top-search-area form button:focus {
+            color: #20d8da;
+            box-shadow: none; }
+        .header-area .top-header-area .login-area {
+            position: relative;
+            z-index: 1; }
+        .header-area .top-header-area .login-area a {
+            display: block;
+            width: 160px;
+            height: 42px;
+            background-color: #20d8da;
+            text-align: center;
+            color: #fff;
+            line-height: 42px;
+            font-size: 14px;
+            margin-left: 10px;
+            font-weight: 400; }
+        @media only screen and (max-width: 767px) {
+            .header-area .top-header-area .login-area a {
+                width: 30px; } }
+        @media only screen and (min-width: 480px) and (max-width: 767px) {
+            .header-area .top-header-area .login-area a {
+                width: 50px; } }
+        .header-area .top-header-area .login-area a:hover, .header-area .top-header-area .login-area a:focus {
+            background-color: #000000;
+            font-weight: 400; }
+        .header-area .top-header-area .login-area a i {
+            display: none;
+            line-height: 42px; }
+        @media only screen and (max-width: 767px) {
+            .header-area .top-header-area .login-area a i {
+                display: block; } }
+        @media only screen and (max-width: 767px) {
+            .header-area .top-header-area .login-area a span {
+                display: none; } }
+        .header-area .egames-main-menu {
+            position: relative;
+            width: 100%;
+            height: 70px; }
+        .header-area .egames-main-menu .classy-navbar {
+            height: 70px;
+            padding: 0; }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .header-area .egames-main-menu .classy-navbar {
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: reverse;
+                -ms-flex-direction: row-reverse;
+                flex-direction: row-reverse; } }
+        @media only screen and (max-width: 767px) {
+            .header-area .egames-main-menu .classy-navbar {
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: reverse;
+                -ms-flex-direction: row-reverse;
+                flex-direction: row-reverse; } }
+        .header-area .egames-main-menu .classy-navbar .nav-brand {
+            max-width: 160px;
+            margin-right: 30px; }
+        .header-area .egames-main-menu .classy-navbar .classynav ul li a {
+            font-weight: 600;
+            text-transform: capitalize;
+            font-size: 16px;
+            padding: 0 10px;
+            color: #545454; }
+        .header-area .egames-main-menu .classy-navbar .classynav ul li a:hover, .header-area .egames-main-menu .classy-navbar .classynav ul li a:focus {
+            color: #20d8da; }
+        .header-area .egames-main-menu .classy-navbar .classynav > ul > li:first-child a {
+            padding-left: 0; }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .header-area .egames-main-menu .classy-navbar .classynav > ul > li:first-child a {
+                padding-left: 10px; } }
+        @media only screen and (max-width: 767px) {
+            .header-area .egames-main-menu .classy-navbar .classynav > ul > li:first-child a {
+                padding-left: 10px; } }
+        .header-area .egames-main-menu .classy-navbar .classynav ul li ul li a {
+            color: #404040;
+            font-size: 14px;
+            padding: 0 20px; }
+        .header-area .egames-main-menu .top-social-info a {
+            font-size: 14px;
+            color: #545454;
+            display: inline-block;
+            margin-left: 30px; }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .header-area .egames-main-menu .top-social-info a {
+                margin-left: 0;
+                margin-right: 30px; } }
+        @media only screen and (max-width: 767px) {
+            .header-area .egames-main-menu .top-social-info a {
+                margin-left: 0;
+                margin-right: 15px; } }
+        .header-area .egames-main-menu .top-social-info a:hover, .header-area .egames-main-menu .top-social-info a:focus {
+            color: #20d8da; }
+        .header-area .is-sticky .egames-main-menu {
+            z-index: 9999;
+            box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.2); }
+
+        /* :: 5.0 Hero Area CSS */
+        .hero-area {
+            position: relative;
+            z-index: 1; }
+        .hero-area .owl-prev {
+            display: none !important; }
+        .hero-area .owl-next {
+            position: absolute;
+            width: 133px;
+            height: 52px;
+            top: 50%;
+            margin-top: -26px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #ffffff;
+            text-transform: capitalize;
+            background-color: #20d8da;
+            right: 50px;
+            text-align: center;
+            -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+            line-height: 52px; }
+        @media only screen and (max-width: 767px) {
+            .hero-area .owl-next {
+                width: 80px;
+                height: 34px;
+                line-height: 34px;
+                margin-top: -17px;
+                font-size: 11px;
+                right: 15px; } }
+        .hero-area .owl-next:hover {
+            background-color: #000000;
+            color: #ffffff; }
+
+        .single-slide {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            height: 790px; }
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+            .single-slide {
+                height: 700px; } }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .single-slide {
+                height: 600px; } }
+        @media only screen and (max-width: 767px) {
+            .single-slide {
+                height: 450px; } }
+        .single-slide .blog-content {
+            -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+            padding: 80px;
+            border-left: 2px solid #20d8da;
+            background-color: rgba(0, 0, 0, 0.6); }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .single-slide .blog-content {
+                padding: 50px; } }
+        @media only screen and (max-width: 767px) {
+            .single-slide .blog-content {
+                padding: 30px 20px; } }
+        .single-slide .blog-content h2 {
+            color: #fff;
+            font-size: 60px;
+            margin-bottom: 20px;
+            font-weight: 400; }
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+            .single-slide .blog-content h2 {
+                font-size: 42px; } }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .single-slide .blog-content h2 {
+                font-size: 36px; } }
+        @media only screen and (max-width: 767px) {
+            .single-slide .blog-content h2 {
+                font-size: 24px; } }
+        .single-slide .blog-content p {
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 0; }
+        @media only screen and (max-width: 767px) {
+            .single-slide .blog-content p {
+                font-size: 12px; } }
+
+        /* :: 6.0 Games Area CSS */
+        .single-games-area {
+            position: relative;
+            z-index: 1; }
+        .single-games-area::after {
+            content: '';
+            width: 2px;
+            height: 100%;
+            background-color: #cdcdcd;
+            top: 0;
+            right: -6.5px;
+            position: absolute;
+            z-index: 1; }
+        @media only screen and (max-width: 767px) {
+            .single-games-area::after {
+                display: none; } }
+        .single-games-area img {
+            max-height: 55px;
+            margin: 0 auto;
+            display: block; }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .single-games-area img {
+                max-height: 40px; } }
+        @media only screen and (max-width: 767px) {
+            .single-games-area img {
+                max-height: 40px; } }
+
+        .games-area {
+            position: relative;
+            z-index: 1; }
+        .games-area .col-12:last-child .single-games-area:after {
+            display: none; }
+
+        .pagination .page-item .page-link {
+            background-color: transparent;
+            font-size: 16px;
+            color: #424242;
+            text-transform: uppercase;
+            text-align: center;
+            display: inline-block;
+            border-radius: 0;
+            padding: 0;
+            margin-right: 10px;
+            border: none;
+            font-weight: 600; }
+        .pagination .page-item .page-link:hover, .pagination .page-item .page-link:focus {
+            color: #20d8da;
+            box-shadow: none; }
+        .pagination .page-item.active .page-link {
+            color: #20d8da; }
+
+        /* :: 7.0 Footer Area CSS */
+        .footer-area {
+            position: relative;
+            z-index: 1;
+            background-color: #0c0c0c;
+            border-top: 1px solid #fff;
+            background-image: url(../../template/assets/img/core-img/pattern.png);
+            background-repeat: repeat; }
+        .footer-area .single-footer-widget {
+            position: relative;
+            z-index: 1; }
+        .footer-area .single-footer-widget .widget-title {
+            display: block;
+            margin-bottom: 60px; }
+        .footer-area .single-footer-widget .widget-title h4 {
+            font-weight: 400;
+            color: #fff;
+            margin-bottom: 0;
+            line-height: 1; }
+        .footer-area .single-footer-widget .widget-content p {
+            margin-bottom: 0;
+            color: #808080; }
+        .footer-area .single-footer-widget .widget-content ul li a {
+            display: block;
+            color: #808080;
+            font-size: 14px;
+            margin-bottom: 20px;
+            font-weight: 400; }
+        .footer-area .single-footer-widget .widget-content ul li a:focus, .footer-area .single-footer-widget .widget-content ul li a:hover {
+            color: #20d8da; }
+        .footer-area .copywrite-content {
+            position: relative;
+            z-index: 1;
+            background-color: rgba(0, 0, 0, 0.4);
+            width: 100%;
+            padding: 15px 0; }
+        .footer-area .copywrite-content .copywrite-text {
+            font-size: 12px;
+            margin-bottom: 0;
+            color: #666666;
+            font-weight: 400; }
+        @media only screen and (max-width: 767px) {
+            .footer-area .copywrite-content .copywrite-text {
+                margin-bottom: 10px; } }
+        @media only screen and (min-width: 576px) and (max-width: 767px) {
+            .footer-area .copywrite-content .copywrite-text {
+                margin-bottom: 0; } }
+        .footer-area .copywrite-content .copywrite-text a {
+            color: #666666;
+            font-size: 12px;
+            font-weight: 400; }
+        .footer-area .copywrite-content .copywrite-text a:hover, .footer-area .copywrite-content .copywrite-text a:focus {
+            color: #20d8da; }
+        .footer-area .copywrite-content .footer-nav {
+            position: relative;
+            z-index: 1; }
+        .footer-area .copywrite-content .footer-nav ul {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -ms-grid-row-align: center;
+            align-items: center;
+            -webkit-box-pack: end;
+            -ms-flex-pack: end;
+            justify-content: flex-end; }
+        @media only screen and (max-width: 767px) {
+            .footer-area .copywrite-content .footer-nav ul {
+                -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                justify-content: flex-start; } }
+        .footer-area .copywrite-content .footer-nav li a {
+            position: relative;
+            z-index: 1;
+            color: #545454;
+            font-size: 14px;
+            font-weight: 400;
+            padding: 0 15px; }
+        @media only screen and (max-width: 767px) {
+            .footer-area .copywrite-content .footer-nav li a {
+                padding: 0 5px; } }
+        .footer-area .copywrite-content .footer-nav li a:hover, .footer-area .copywrite-content .footer-nav li a:focus {
+            color: #20d8da; }
+
+        /* :: 8.0 Blog Area CSS */
+        .single-articles-area {
+            position: relative;
+            z-index: 1; }
+        .single-articles-area .article-thumbnail {
+            position: relative;
+            z-index: 1;
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 38%;
+            flex: 0 0 38%;
+            max-width: 38%;
+            width: 38%;
+            overflow: hidden; }
+        @media only screen and (max-width: 767px) {
+            .single-articles-area .article-thumbnail {
+                -webkit-box-flex: 0;
+                -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+                max-width: 100%;
+                width: 100%;
+                margin-bottom: 30px; } }
+        .single-articles-area .article-thumbnail img {
+            width: 100%;
+            -webkit-transition-duration: 500ms;
+            transition-duration: 500ms; }
+        .single-articles-area .article-thumbnail::after {
+            -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            content: '';
+            background-color: rgba(32, 216, 218, 0.6);
+            position: absolute;
+            visibility: hidden;
+            opacity: 0; }
+        .single-articles-area .article-content {
+            position: relative;
+            z-index: 1;
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 62%;
+            flex: 0 0 62%;
+            max-width: 62%;
+            width: 62%;
+            padding-left: 30px; }
+        @media only screen and (max-width: 767px) {
+            .single-articles-area .article-content {
+                -webkit-box-flex: 0;
+                -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+                max-width: 100%;
+                width: 100%;
+                padding-left: 0; } }
+        .single-articles-area .article-content .post-title {
+            font-size: 24px;
+            color: #424242;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 10px; }
+        .single-articles-area .article-content .post-title:hover {
+            color: #20d8da; }
+        .single-articles-area .article-content .post-meta {
+            position: relative;
+            z-index: 1;
+            margin-bottom: 25px; }
+        .single-articles-area .article-content .post-meta a {
+            font-size: 14px;
+            color: #6b6b6b;
+            font-weight: 700;
+            text-transform: uppercase; }
+        .single-articles-area .article-content .post-meta a:first-child {
+            margin-right: 30px;
+            color: #20d8da; }
+        .single-articles-area .article-content .post-meta a:hover, .single-articles-area .article-content .post-meta a:focus {
+            color: #20d8da; }
+        .single-articles-area .article-content p {
+            color: #939393;
+            margin-bottom: 0; }
+        .single-articles-area:hover .article-thumbnail::after, .single-articles-area:focus .article-thumbnail::after {
+            visibility: visible;
+            opacity: 1; }
+        .single-articles-area:hover .article-thumbnail img, .single-articles-area:focus .article-thumbnail img {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
+        .single-articles-area.style-2 .article-content .post-title {
+            color: #fff; }
+        .single-articles-area.style-2 .article-content p {
+            color: #c2c2c2; }
+
+        .article-content {
+            position: relative;
+            z-index: 1; }
+        .article-content .post-title {
+            -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+            font-size: 30px;
+            color: #fff;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 10px; }
+        .article-content .post-title:hover {
+            color: #20d8da; }
+        .article-content .post-meta {
+            position: relative;
+            z-index: 1;
+            margin-bottom: 50px; }
+        .article-content .post-meta a {
+            font-size: 14px;
+            color: #6b6b6b;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-right: 30px; }
+        .article-content .post-meta a:last-child {
+            margin-right: 0; }
+        .article-content .post-meta a:hover, .article-content .post-meta a:focus {
+            color: #20d8da; }
+        .article-content p {
+            color: #939393; }
+
+        .post-details-content {
+            position: relative;
+            z-index: 1; }
+        .post-details-content .blog-thumbnail {
+            -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+            position: relative;
+            z-index: 1; }
+        .post-details-content .blog-thumbnail img {
+            width: 100%; }
+        .post-details-content .blog-content {
+            position: relative;
+            z-index: 1; }
+        .post-details-content .blog-content .post-title {
+            display: block;
+            font-size: 24px;
+            margin-bottom: 15px;
+            -webkit-transition-duration: 500ms;
+            transition-duration: 500ms; }
+        @media only screen and (max-width: 767px) {
+            .post-details-content .blog-content .post-title {
+                font-size: 18px; } }
+        .post-details-content .blog-content .post-meta {
+            position: relative;
+            z-index: 1;
+            margin-bottom: 50px; }
+        .post-details-content .blog-content .post-meta a {
+            font-size: 14px;
+            color: #6b6b6b;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-right: 30px; }
+        .post-details-content .blog-content .post-meta a:last-child {
+            margin-right: 0; }
+        .post-details-content .blog-content .post-meta a:hover, .post-details-content .blog-content .post-meta a:focus {
+            color: #20d8da; }
+        @media only screen and (max-width: 767px) {
+            .post-details-content .blog-content .post-meta a {
+                font-size: 12px;
+                margin-right: 15px; } }
+        .post-details-content .blog-content p {
+            line-height: 2.2; }
+
+        .sidebar-area {
+            position: relative;
+            z-index: 1; }
+
+        .single-video-widget {
+            background-color: #232323;
+            padding: 20px 15px;
+            border-bottom: 1px solid #fff;
+            -webkit-transition-duration: 500ms;
+            transition-duration: 500ms; }
+        .single-video-widget .video-thumbnail {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 80px;
+            flex: 0 0 80px;
+            max-width: 80px;
+            width: 80px;
+            margin-right: 15px; }
+        .single-video-widget .video-text {
+            position: relative;
+            z-index: 1; }
+        .single-video-widget .video-text a {
+            margin-bottom: 0;
+            line-height: 1.7;
+            color: #fff;
+            font-size: 15px;
+            display: block;
+            font-weight: 400; }
+        .single-video-widget .video-text span {
+            color: #747373;
+            font-size: 12px;
+            margin: 0; }
+        .single-video-widget .video-rating {
+            -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 50px;
+            flex: 0 0 50px;
+            max-width: 50px;
+            width: 50px;
+            margin-left: 15px;
+            background-color: #20d8da;
+            height: 30px;
+            color: #fff;
+            line-height: 30px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 12px; }
+        .single-video-widget:hover, .single-video-widget:focus {
+            background-color: #20d8da; }
+        .single-video-widget:hover .video-rating, .single-video-widget:focus .video-rating {
+            background-color: #232323; }
+
+        .single-widget-area {
+            position: relative;
+            z-index: 1; }
+        .single-widget-area .widget-title {
+            margin-bottom: 50px;
+            font-weight: 600; }
+        .single-widget-area.add-widget {
+            margin-bottom: 160px; }
+        .single-widget-area.add-widget .side-img {
+            position: absolute;
+            bottom: -80px;
+            z-index: 10;
+            width: 80%;
+            right: -40px; }
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+            .single-widget-area.add-widget .side-img {
+                right: -30px; } }
+        @media only screen and (max-width: 767px) {
+            .single-widget-area.add-widget .side-img {
+                right: 0; } }
+        .single-widget-area.add-widget img {
+            width: 100%; }
+        .single-widget-area.video-widget {
+            margin-bottom: 80px; }
+        .single-widget-area.post-widget .single-post-area {
+            position: relative;
+            z-index: 1;
+            margin-bottom: 20px; }
+        .single-widget-area.post-widget .single-post-area:last-child {
+            margin-bottom: 0; }
+        .single-widget-area.post-widget .single-post-area .blog-thumbnail {
+            position: relative;
+            z-index: 1;
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 80px;
+            flex: 0 0 80px;
+            max-width: 80px;
+            width: 80px;
+            margin-right: 20px; }
+        .single-widget-area.post-widget .single-post-area .blog-thumbnail img {
+            width: 100%; }
+        .single-widget-area.post-widget .single-post-area .blog-content {
+            position: relative;
+            z-index: 1; }
+        .single-widget-area.post-widget .single-post-area .blog-content .post-title {
+            display: block;
+            font-size: 16px;
+            margin-bottom: 10px;
+            -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+            font-weight: 600; }
+        .single-widget-area.post-widget .single-post-area .blog-content .post-title:hover, .single-widget-area.post-widget .single-post-area .blog-content .post-title:focus {
+            color: #20d8da; }
+        .single-widget-area.post-widget .single-post-area .blog-content span {
+            display: block;
+            color: #747373;
+            font-size: 12px; }
+
+        .comment_area {
+            position: relative;
+            z-index: 1; }
+        .comment_area .comment-content .comment-author {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 80px;
+            flex: 0 0 80px;
+            min-width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 20px; }
+        .comment_area .comment-content .comment-meta {
+            margin-bottom: 30px; }
+        .comment_area .comment-content .comment-meta .post-author {
+            font-size: 16px;
+            display: block;
+            font-weight: 600;
+            margin-bottom: 10px;
+            text-transform: capitalize; }
+        .comment_area .comment-content .comment-meta .post-date {
+            display: block;
+            font-size: 12px;
+            font-weight: 600;
+            color: #20d8da;
+            margin-bottom: 10px; }
+        .comment_area .comment-content .comment-meta .reply {
+            position: relative;
+            z-index: 1;
+            margin-bottom: 0;
+            display: block;
+            font-size: 12px;
+            color: #424242; }
+        .comment_area .comment-content .comment-meta .reply:hover {
+            color: #20d8da; }
+        .comment_area .comment-content .comment-meta p {
+            margin-bottom: 10px; }
+        .comment_area .single_comment_area {
+            margin-bottom: 30px; }
+        .comment_area .single_comment_area:last-of-type {
+            margin-bottom: 0; }
+        .comment_area .children .single_comment_area {
+            margin-left: 50px;
+            margin-top: 30px; }
+
+        /* :: 9.0 Monthly Picks Area CSS */
+        .monthly-picks-area {
+            position: relative;
+            z-index: 1;
+            background-color: #0e0e0e;
+            overflow: hidden; }
+        .monthly-picks-area .nav-tabs {
+            border-bottom: 2px solid #323232;
+            margin-bottom: 80px; }
+        .monthly-picks-area .nav-tabs .nav-item .nav-link {
+            padding: 0 25px;
+            height: 56px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 56px;
+            border-radius: 0;
+            border: none; }
+        .monthly-picks-area .nav-tabs .nav-item .nav-link:hover {
+            border: none; }
+        .monthly-picks-area .nav-tabs .nav-item .nav-link.active {
+            background-color: #20d8da; }
+        @media only screen and (max-width: 767px) {
+            .monthly-picks-area .nav-tabs .nav-item .nav-link {
+                padding: 0 20px;
+                height: 42px;
+                line-height: 42px;
+                font-size: 12px; } }
+
+        .single-games-slide {
+            position: relative;
+            z-index: 1; }
+        .single-games-slide .slide-text {
+            margin-top: 30px; }
+        .single-games-slide .slide-text .game-title {
+            color: #fff;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 18px; }
+        @media only screen and (max-width: 767px) {
+            .single-games-slide .slide-text .game-title {
+                font-size: 16px; } }
+        .single-games-slide .slide-text .game-title:hover, .single-games-slide .slide-text .game-title:focus {
+            color: #20d8da; }
+        .single-games-slide .slide-text .meta-data {
+            position: relative;
+            z-index: 1; }
+        .single-games-slide .slide-text .meta-data a {
+            font-size: 12px;
+            color: #6b6b6b;
+            font-weight: 700;
+            text-transform: uppercase; }
+        .single-games-slide .slide-text .meta-data a:first-child {
+            margin-right: 15px; }
+        .single-games-slide .slide-text .meta-data a:last-child {
+            color: #20d8da; }
+        .single-games-slide .slide-text .meta-data a:hover, .single-games-slide .slide-text .meta-data a:focus {
+            color: #20d8da; }
+
+        .popular-games-slideshow,
+        .latest-games-slideshow,
+        .editor-games-slideshow {
+            position: relative;
+            z-index: 1; }
+        .popular-games-slideshow .owl-prev,
+        .popular-games-slideshow .owl-next,
+        .latest-games-slideshow .owl-prev,
+        .latest-games-slideshow .owl-next,
+        .editor-games-slideshow .owl-prev,
+        .editor-games-slideshow .owl-next {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            top: 50%;
+            margin-top: -30px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: rgba(13, 13, 13, 0.7);
+            left: 22%;
+            text-align: center;
+            -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+            line-height: 60px; }
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+            .popular-games-slideshow .owl-prev,
+            .popular-games-slideshow .owl-next,
+            .latest-games-slideshow .owl-prev,
+            .latest-games-slideshow .owl-next,
+            .editor-games-slideshow .owl-prev,
+            .editor-games-slideshow .owl-next {
+                left: 15%; } }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .popular-games-slideshow .owl-prev,
+            .popular-games-slideshow .owl-next,
+            .latest-games-slideshow .owl-prev,
+            .latest-games-slideshow .owl-next,
+            .editor-games-slideshow .owl-prev,
+            .editor-games-slideshow .owl-next {
+                left: 15%; } }
+        @media only screen and (max-width: 767px) {
+            .popular-games-slideshow .owl-prev,
+            .popular-games-slideshow .owl-next,
+            .latest-games-slideshow .owl-prev,
+            .latest-games-slideshow .owl-next,
+            .editor-games-slideshow .owl-prev,
+            .editor-games-slideshow .owl-next {
+                left: 5%;
+                width: 40px;
+                height: 40px;
+                margin-top: -20px;
+                line-height: 40px; } }
+        .popular-games-slideshow .owl-prev:hover,
+        .popular-games-slideshow .owl-next:hover,
+        .latest-games-slideshow .owl-prev:hover,
+        .latest-games-slideshow .owl-next:hover,
+        .editor-games-slideshow .owl-prev:hover,
+        .editor-games-slideshow .owl-next:hover {
+            background-color: #20d8da;
+            color: #ffffff; }
+        .popular-games-slideshow .owl-next,
+        .latest-games-slideshow .owl-next,
+        .editor-games-slideshow .owl-next {
+            left: auto;
+            right: 22%; }
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+            .popular-games-slideshow .owl-next,
+            .latest-games-slideshow .owl-next,
+            .editor-games-slideshow .owl-next {
+                right: 15%; } }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .popular-games-slideshow .owl-next,
+            .latest-games-slideshow .owl-next,
+            .editor-games-slideshow .owl-next {
+                right: 15%; } }
+        @media only screen and (max-width: 767px) {
+            .popular-games-slideshow .owl-next,
+            .latest-games-slideshow .owl-next,
+            .editor-games-slideshow .owl-next {
+                right: 5%; } }
+
+        .left-right-pattern {
+            position: relative;
+            z-index: 6000; }
+        .left-right-pattern::after {
+            position: absolute;
+            width: 100%;
+            height: 2000px;
+            top: -500px;
+            left: 1110px;
+            content: '';
+            background-color: rgba(14, 14, 14, 0.8);
+            background-image: url(../../template/assets/img/core-img/pattern.png);
+            z-index: 6000; }
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+            .left-right-pattern::after {
+                left: 930px; } }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .left-right-pattern::after {
+                left: 690px; } }
+        @media only screen and (max-width: 767px) {
+            .left-right-pattern::after {
+                display: none; } }
+        .left-right-pattern::before {
+            position: absolute;
+            width: 100%;
+            height: 2000px;
+            top: -500px;
+            left: -1110px;
+            content: '';
+            background-color: rgba(14, 14, 14, 0.8);
+            background-image: url(../../template/assets/img/core-img/pattern.png);
+            z-index: 6000; }
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+            .left-right-pattern::before {
+                left: -930px; } }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .left-right-pattern::before {
+                left: -690px; } }
+        @media only screen and (max-width: 767px) {
+            .left-right-pattern::before {
+                display: none; } }
+
+        /* :: 10.0 Video Area CSS */
+        .egames-video-area {
+            position: relative;
+            z-index: 1; }
+        .egames-video-area .egames-nav-btn {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            height: 590px;
+            overflow-x: hidden;
+            overflow-y: scroll; }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .egames-video-area .egames-nav-btn {
+                height: 400px; } }
+        @media only screen and (max-width: 767px) {
+            .egames-video-area .egames-nav-btn {
+                height: 400px; } }
+        .egames-video-area .nav-link {
+            padding: 0; }
+        .egames-video-area .nav-link .video-text .video-title {
+            color: #fff; }
+        .egames-video-area .nav-link .video-text span {
+            font-size: 10px; }
+        .egames-video-area .nav-link.active .single-video-widget {
+            background-color: #20d8da; }
+        .egames-video-area .nav-link.active .single-video-widget .video-rating {
+            background-color: #424242; }
+        .egames-video-area .video-playground {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            height: 590px;
+            border-left: 1px solid #fff; }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .egames-video-area .video-playground {
+                height: 400px; } }
+        @media only screen and (max-width: 767px) {
+            .egames-video-area .video-playground {
+                height: 300px; } }
+        .egames-video-area .video-playground .play-btn a {
+            -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+            position: absolute;
+            width: 74px;
+            height: 74px;
+            z-index: 100;
+            top: 50%;
+            left: 50%;
+            margin-top: -37px;
+            margin-left: -37px;
+            background-color: rgba(255, 0, 0, 0.63);
+            border-radius: 50%;
+            text-align: center; }
+        .egames-video-area .video-playground .play-btn a img {
+            padding: 25px 0; }
+        .egames-video-area .video-playground .play-btn a:hover {
+            background-color: #20d8da; }
+
+        /* :: 11.0 Game Review Area CSS */
+        .single-game-review-area {
+            position: relative;
+            z-index: 1; }
+        .single-game-review-area .game-thumbnail {
+            position: relative;
+            z-index: 1;
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 42%;
+            flex: 0 0 42%;
+            max-width: 42%;
+            width: 42%;
+            overflow: hidden; }
+        @media only screen and (max-width: 767px) {
+            .single-game-review-area .game-thumbnail {
+                -webkit-box-flex: 0;
+                -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+                max-width: 100%;
+                width: 100%;
+                margin-bottom: 30px; } }
+        .single-game-review-area .game-thumbnail img {
+            width: 100%;
+            -webkit-transition-duration: 500ms;
+            transition-duration: 500ms; }
+        .single-game-review-area .game-thumbnail::after {
+            -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            content: '';
+            background-color: rgba(32, 216, 218, 0.6);
+            position: absolute;
+            visibility: hidden;
+            opacity: 0; }
+        .single-game-review-area .game-content {
+            position: relative;
+            z-index: 1;
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 58%;
+            flex: 0 0 58%;
+            max-width: 58%;
+            width: 58%;
+            padding-left: 30px; }
+        @media only screen and (max-width: 767px) {
+            .single-game-review-area .game-content {
+                -webkit-box-flex: 0;
+                -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+                max-width: 100%;
+                width: 100%;
+                padding-left: 0; } }
+        .single-game-review-area .game-content .game-tag {
+            font-size: 11px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            color: #aaaaaa; }
+        .single-game-review-area .game-content .game-title {
+            font-size: 24px;
+            color: #424242;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 10px; }
+        .single-game-review-area .game-content .game-title:hover {
+            color: #20d8da; }
+        .single-game-review-area .game-content .game-meta {
+            position: relative;
+            z-index: 1;
+            margin-bottom: 15px; }
+        .single-game-review-area .game-content .game-meta a {
+            font-size: 14px;
+            color: #6b6b6b;
+            font-weight: 700;
+            text-transform: uppercase; }
+        .single-game-review-area .game-content .game-meta a:first-child {
+            margin-right: 30px; }
+        .single-game-review-area .game-content .game-meta a:hover, .single-game-review-area .game-content .game-meta a:focus {
+            color: #20d8da; }
+        .single-game-review-area .game-content p {
+            color: #939393;
+            margin-bottom: 15px; }
+        .single-game-review-area .game-content .download-rating-area {
+            position: relative;
+            z-index: 1; }
+        .single-game-review-area .game-content .download-rating-area .download-area a {
+            display: inline-block; }
+        .single-game-review-area .game-content .download-rating-area .download-area a:first-child {
+            margin-right: 20px; }
+        .single-game-review-area .game-content .download-rating-area .download-area a img {
+            max-height: 36px; }
+        @media only screen and (max-width: 767px) {
+            .single-game-review-area .game-content .download-rating-area .download-area a img {
+                max-height: 24px; } }
+        .single-game-review-area .game-content .download-rating-area .rating-area h3 {
+            font-size: 30px;
+            font-weight: 400;
+            margin-bottom: 0; }
+        .single-game-review-area .game-content .download-rating-area .rating-area .stars {
+            font-size: 10px; }
+        .single-game-review-area .game-content .download-rating-area .rating-area .stars i {
+            color: #fbb710; }
+        .single-game-review-area:hover .game-thumbnail::after, .single-game-review-area:focus .game-thumbnail::after {
+            visibility: visible;
+            opacity: 1; }
+        .single-game-review-area:hover .game-thumbnail img, .single-game-review-area:focus .game-thumbnail img {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
+        .single-game-review-area.style-2 .game-content {
+            padding-left: 0;
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+            width: 100%; }
+
+        .single-game-img-slides {
+            position: relative;
+            z-index: 1; }
+        .single-game-img-slides .carousel-indicators {
+            position: relative;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding-left: 0;
+            margin-right: 0;
+            margin-left: 0;
+            margin-top: 15px; }
+        .single-game-img-slides .carousel-indicators li {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 calc(16.66667% - 12.5px);
+            flex: 0 0 calc(16.66667% - 12.5px);
+            max-width: calc(16.66667% - 12.5px);
+            width: calc(16.66667% - 12.5px);
+            height: 150px;
+            margin-left: 0;
+            margin-right: 15px;
+            background-size: cover;
+            background-position: center center; }
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+            .single-game-img-slides .carousel-indicators li {
+                height: 100px; } }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .single-game-img-slides .carousel-indicators li {
+                height: 80px; } }
+        @media only screen and (max-width: 767px) {
+            .single-game-img-slides .carousel-indicators li {
+                height: 40px; } }
+        .single-game-img-slides .carousel-indicators li:last-child {
+            margin-right: 0; }
+
+        .egames-barfiller {
+            position: relative;
+            z-index: 1; }
+        @media only screen and (max-width: 767px) {
+            .egames-barfiller {
+                margin-top: 100px; } }
+
+        .single-barfiller-area {
+            position: relative;
+            z-index: 1;
+            margin-bottom: 50px;
+            display: block; }
+        .single-barfiller-area:last-child {
+            margin-bottom: 0; }
+        .single-barfiller-area .barfiller {
+            width: 100%;
+            height: 7px;
+            background: #dcdfff;
+            border: none;
+            position: relative;
+            margin-bottom: 20px;
+            box-shadow: none; }
+        .single-barfiller-area .barfiller .fill {
+            display: block;
+            position: relative;
+            width: 0px;
+            height: 100%;
+            background: #333;
+            z-index: 1; }
+        .single-barfiller-area .barfiller .tipWrap {
+            display: none; }
+        .single-barfiller-area .barfiller .tip {
+            margin-top: 15px;
+            padding: 2px 4px;
+            font-size: 11px;
+            color: #424242;
+            left: 0px;
+            font-size: 14px;
+            position: absolute;
+            z-index: 2;
+            background: transparent; }
+        .single-barfiller-area .barfiller .tip::after {
+            display: none; }
+        .single-barfiller-area p {
+            margin-bottom: 0;
+            font-size: 14px;
+            color: #424242;
+            line-height: 1;
+            margin-top: 15px; }
+
+        /* :: 12.0 Breadcrumb Area CSS */
+        .breadcrumb-area {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            height: 410px; }
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+            .breadcrumb-area {
+                height: 370px; } }
+        @media only screen and (max-width: 767px) {
+            .breadcrumb-area {
+                height: 230px; } }
+        .breadcrumb-area .breadcrumb-text {
+            -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+            position: relative;
+            z-index: 1;
+            padding: 30px 60px;
+            border-left: 2px solid #20d8da;
+            background-color: rgba(0, 0, 0, 0.6);
+            display: inline-block; }
+        @media only screen and (max-width: 767px) {
+            .breadcrumb-area .breadcrumb-text {
+                padding: 20px 40px; } }
+        .breadcrumb-area .breadcrumb-text h2 {
+            font-size: 36px;
+            line-height: 1;
+            margin-bottom: 0;
+            color: #fff;
+            font-weight: 400; }
+        @media only screen and (max-width: 767px) {
+            .breadcrumb-area .breadcrumb-text h2 {
+                font-size: 24px; } }
+        .breadcrumb-area:hover .breadcrumb-text {
+            border-left: 2px solid #fff;
+            background-color: #20d8da; }
+
+        /* :: 13.0 Contact Area CSS */
+        .contact-content {
+            position: relative;
+            z-index: 1; }
+        .contact-content p {
+            margin-bottom: 0; }
+
+        .single-contact-info {
+            position: relative;
+            margin-bottom: 15px; }
+        .single-contact-info:last-child {
+            margin-bottom: 0; }
+        .single-contact-info .title {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 99px;
+            flex: 0 0 99px;
+            max-width: 99px;
+            width: 99px;
+            height: 32px;
+            background-color: #20d8da;
+            text-align: center;
+            margin-right: 20px; }
+        .single-contact-info .title p {
+            color: #fff;
+            line-height: 32px;
+            font-size: 14px;
+            margin-bottom: 0; }
+        .single-contact-info p {
+            font-size: 14px;
+            margin-bottom: 0; }
+
+        .contact-form-area .form-control {
+            position: relative;
+            z-index: 2;
+            height: 45px;
+            width: 100%;
+            background-color: #eff4f9;
+            font-size: 12px;
+            margin-bottom: 30px;
+            border-radius: 0;
+            padding: 15px 30px;
+            font-weight: 600;
+            font-style: italic;
+            color: #ababab;
+            -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+            border: none; }
+        .contact-form-area .form-control:focus {
+            box-shadow: none; }
+        .contact-form-area textarea.form-control {
+            height: 190px; }
+
+        .map-area {
+            position: relative;
+            z-index: 2; }
+        .map-area iframe {
+            width: 100%;
+            height: 515px;
+            border: none;
+            margin-bottom: 0; }
+        @media only screen and (max-width: 767px) {
+            .map-area iframe {
+                height: 300px; } }
+
+        /* ====== The End ====== */
+
+        /*# sourceMappingURL=style.css.map */
+
+    </style>
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Top Header Area -->
+        <div class="top-header-area">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12 d-flex align-items-center justify-content-between">
+                        <!-- Logo Area -->
+                        <div class="logo">
+                            <a href="universalpasswd.html"><img src="../../template/assets/img/core-img/logo.png" alt=""></a>
+                        </div>
+
+                        <!-- Search & Login Area -->
+                        <div class="search-login-area d-flex align-items-center">
+                            <!-- Top Search Area -->
+                            <div class="top-search-area">
+                                <form action="" method="post">
+                                    <input type="search" name="keyWordName" id="topSearch" placeholder="Search">
+                                    <button type="submit" class="btn"><i class="fa fa-search"></i></button>
+                                </form>
+                            </div>
+                            <!-- Login Area -->
+                            <div class="login-area">
+                                <a href="#"><span>Login / Register</span> <i class="fa fa-lock" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar Area -->
+        <div class="egames-main-menu" id="sticker">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="egamesNav">
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="universalpasswd.html">Home</a></li>
+                                    <li><a href="game-review.html">Games</a>
+                                        <ul class="dropdown">
+                                            <li><a href="game-review.html">Game Review</a></li>
+                                            <li><a href="single-game-review.html">Single Game Review</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Pages</a>
+                                        <ul class="dropdown">
+                                            <li><a href="universalpasswd.html">Home</a></li>
+                                            <li><a href="post-injection.html">Articles</a></li>
+                                            <li><a href="single-post.html">Single Articles</a></li>
+                                            <li><a href="game-review.html">Game Review</a></li>
+                                            <li><a href="single-game-review.html">Single Game Review</a></li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="post-injection.html">Articles</a>
+                                        <ul class="dropdown">
+                                            <li><a href="post-injection.html">Articles</a></li>
+                                            <li><a href="single-post.html">Single Articles</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="single-game-review.html">Reviews</a>
+                                        <ul class="dropdown">
+                                            <li><a href="game-review.html">Game Review</a></li>
+                                            <li><a href="single-game-review.html">Single Game Review</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+
+                        <!-- Top Social Info -->
+                        <div class="top-social-info">
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="Pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="Dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="Behance"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Breadcrumb Area Start ##### -->
+    <section class="breadcrumb-area bg-img bg-overlay" style="background-image: url(../../template/assets/img/bg-img/3.jpg);">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <!-- Breadcrumb Text -->
+                <div class="col-12">
+                    <div class="breadcrumb-text">
+                        <h2>Category</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Breadcrumb Area End ##### -->
+
+    <!-- ##### Articles Area Start ##### -->
+    <section class="articles-area section-padding-0-100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- Articles Post Area -->
+                <div class="col-12 col-lg-8">
+                    <div class="mt-100">
+
+                        <!-- *** Single Articles Area *** -->
+                        <div class="single-articles-area d-flex flex-wrap mb-30">
+                            <div class="article-thumbnail">
+                                <img src="../../template/assets/img/bg-img/6.jpg" alt="">
+                            </div>
+                            <div class="article-content">
+                                <a href="single-post.html" class="post-title">Sony’s new releases for 2018</a>
+                                <div class="post-meta">
+                                    <a href="#" class="post-date">July 12, 2018</a>
+                                    <a href="#" class="post-comments">2 Comments</a>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris velit arcu, scelerisque dignissim massa quis, mattis facilisis erat. Aliquam erat volutpat. Sed efficitur diam.</p>
+                            </div>
+                        </div>
+
+                        <!-- *** Single Articles Area *** -->
+                        <div class="single-articles-area d-flex flex-wrap mb-30">
+                            <div class="article-thumbnail">
+                                <img src="../../template/assets/img/bg-img/7.jpg" alt="">
+                            </div>
+                            <div class="article-content">
+                                <a href="single-post.html" class="post-title">10 Tips to be a better gamer</a>
+                                <div class="post-meta">
+                                    <a href="#" class="post-date">July 12, 2018</a>
+                                    <a href="#" class="post-comments">2 Comments</a>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris velit arcu, scelerisque dignissim massa quis, mattis facilisis erat. Aliquam erat volutpat. Sed efficitur diam.</p>
+                            </div>
+                        </div>
+
+                        <!-- *** Single Articles Area *** -->
+                        <div class="single-articles-area d-flex flex-wrap mb-30">
+                            <div class="article-thumbnail">
+                                <img src="../../template/assets/img/bg-img/8.jpg" alt="">
+                            </div>
+                            <div class="article-content">
+                                <a href="single-post.html" class="post-title">Microsoft has some new tips</a>
+                                <div class="post-meta">
+                                    <a href="#" class="post-date">July 12, 2018</a>
+                                    <a href="#" class="post-comments">2 Comments</a>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris velit arcu, scelerisque dignissim massa quis, mattis facilisis erat. Aliquam erat volutpat. Sed efficitur diam.</p>
+                            </div>
+                        </div>
+
+                        <!-- *** Single Articles Area *** -->
+                        <div class="single-articles-area d-flex flex-wrap mb-30">
+                            <div class="article-thumbnail">
+                                <img src="../../template/assets/img/bg-img/9.jpg" alt="">
+                            </div>
+                            <div class="article-content">
+                                <a href="single-post.html" class="post-title">Sony’s new releases for 2018</a>
+                                <div class="post-meta">
+                                    <a href="#" class="post-date">July 12, 2018</a>
+                                    <a href="#" class="post-comments">2 Comments</a>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris velit arcu, scelerisque dignissim massa quis, mattis facilisis erat. Aliquam erat volutpat. Sed efficitur diam.</p>
+                            </div>
+                        </div>
+
+                        <!-- *** Single Articles Area *** -->
+                        <div class="single-articles-area d-flex flex-wrap mb-30">
+                            <div class="article-thumbnail">
+                                <img src="../../template/assets/img/bg-img/10.jpg" alt="">
+                            </div>
+                            <div class="article-content">
+                                <a href="single-post.html" class="post-title">10 Tips to be a better gamer</a>
+                                <div class="post-meta">
+                                    <a href="#" class="post-date">July 12, 2018</a>
+                                    <a href="#" class="post-comments">2 Comments</a>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris velit arcu, scelerisque dignissim massa quis, mattis facilisis erat. Aliquam erat volutpat. Sed efficitur diam.</p>
+                            </div>
+                        </div>
+
+                        <!-- *** Single Articles Area *** -->
+                        <div class="single-articles-area d-flex flex-wrap mb-30">
+                            <div class="article-thumbnail">
+                                <img src="../../template/assets/img/bg-img/11.jpg" alt="">
+                            </div>
+                            <div class="article-content">
+                                <a href="single-post.html" class="post-title">Microsoft has some new tips</a>
+                                <div class="post-meta">
+                                    <a href="#" class="post-date">July 12, 2018</a>
+                                    <a href="#" class="post-comments">2 Comments</a>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris velit arcu, scelerisque dignissim massa quis, mattis facilisis erat. Aliquam erat volutpat. Sed efficitur diam.</p>
+                            </div>
+                        </div>
+
+                        <!-- *** Single Articles Area *** -->
+                        <div class="single-articles-area d-flex flex-wrap mb-30">
+                            <div class="article-thumbnail">
+                                <img src="../../template/assets/img/bg-img/12.jpg" alt="">
+                            </div>
+                            <div class="article-content">
+                                <a href="single-post.html" class="post-title">Sony’s new releases for 2018</a>
+                                <div class="post-meta">
+                                    <a href="#" class="post-date">July 12, 2018</a>
+                                    <a href="#" class="post-comments">2 Comments</a>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris velit arcu, scelerisque dignissim massa quis, mattis facilisis erat. Aliquam erat volutpat. Sed efficitur diam.</p>
+                            </div>
+                        </div>
+
+                        <!-- *** Single Articles Area *** -->
+                        <div class="single-articles-area d-flex flex-wrap mb-30">
+                            <div class="article-thumbnail">
+                                <img src="../../template/assets/img/bg-img/13.jpg" alt="">
+                            </div>
+                            <div class="article-content">
+                                <a href="single-post.html" class="post-title">10 Tips to be a better gamer</a>
+                                <div class="post-meta">
+                                    <a href="#" class="post-date">July 12, 2018</a>
+                                    <a href="#" class="post-comments">2 Comments</a>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris velit arcu, scelerisque dignissim massa quis, mattis facilisis erat. Aliquam erat volutpat. Sed efficitur diam.</p>
+                            </div>
+                        </div>
+
+                        <!-- ### Pagination Area ### -->
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination mt-100">
+                                <li class="page-item active"><a class="page-link" href="#">01</a></li>
+                                <li class="page-item"><a class="page-link" href="#">02</a></li>
+                                <li class="page-item"><a class="page-link" href="#">03</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- Sidebar Area -->
+                <div class="col-12 col-sm-9 col-md-6 col-lg-4">
+                    <div class="sidebar-area mt-100">
+
+                        <!-- Single Widget Area -->
+                        <div class="single-widget-area add-widget">
+                            <a href="#"><img src="../../template/assets/img/bg-img/add.png" alt=""></a>
+                            <!-- Side Img -->
+                            <img src="../../template/assets/img/bg-img/side-img.png" class="side-img" alt="">
+                        </div>
+
+                        <!-- Single Widget Area -->
+                        <div class="single-widget-area video-widget">
+                            <!-- Single Video Widget -->
+                            <div class="single-video-widget d-flex">
+                                <div class="video-thumbnail">
+                                    <img src="../../template/assets/img/bg-img/14.jpg" alt="">
+                                </div>
+                                <div class="video-text">
+                                    <a href="#" class="video-title">Assemble Your Squad and Join the Battle</a>
+                                    <span>Nintendo Wii, PS4, XBox 360</span>
+                                </div>
+                                <div class="video-rating">8.3/10</div>
+                            </div>
+
+                            <!-- Single Video Widget -->
+                            <div class="single-video-widget d-flex">
+                                <div class="video-thumbnail">
+                                    <img src="../../template/assets/img/bg-img/15.jpg" alt="">
+                                </div>
+                                <div class="video-text">
+                                    <a href="#" class="video-title">Tips to improve your game</a>
+                                    <span>Nintendo Wii, PS4, XBox 360</span>
+                                </div>
+                                <div class="video-rating">8.3/10</div>
+                            </div>
+
+                            <!-- Single Video Widget -->
+                            <div class="single-video-widget d-flex">
+                                <div class="video-thumbnail">
+                                    <img src="../../template/assets/img/bg-img/16.jpg" alt="">
+                                </div>
+                                <div class="video-text">
+                                    <a href="#" class="video-title">Game reviews: the best of 2018</a>
+                                    <span>Nintendo Wii, PS4, XBox 360</span>
+                                </div>
+                                <div class="video-rating">8.3/10</div>
+                            </div>
+
+                            <!-- Single Video Widget -->
+                            <div class="single-video-widget d-flex">
+                                <div class="video-thumbnail">
+                                    <img src="../../template/assets/img/bg-img/17.jpg" alt="">
+                                </div>
+                                <div class="video-text">
+                                    <a href="#" class="video-title">Assemble Your Squad and Join the Battle</a>
+                                    <span>Nintendo Wii, PS4, XBox 360</span>
+                                </div>
+                                <div class="video-rating">8.3/10</div>
+                            </div>
+
+                            <!-- Single Video Widget -->
+                            <div class="single-video-widget d-flex">
+                                <div class="video-thumbnail">
+                                    <img src="../../template/assets/img/bg-img/18.jpg" alt="">
+                                </div>
+                                <div class="video-text">
+                                    <a href="#" class="video-title">New to gaming? Here are some tips</a>
+                                    <span>Nintendo Wii, PS4, XBox 360</span>
+                                </div>
+                                <div class="video-rating">8.3/10</div>
+                            </div>
+                        </div>
+
+                        <!-- Single Widget Area -->
+                        <div class="single-widget-area post-widget">
+                            <h4 class="widget-title">Latest Posts</h4>
+                            <!-- Single Post Widget -->
+                            <div class="single-post-area d-flex">
+                                <div class="blog-thumbnail">
+                                    <img src="../../template/assets/img/bg-img/19.jpg" alt="">
+                                </div>
+                                <div class="blog-content">
+                                    <a href="#" class="post-title">New to gaming? Here are some tips</a>
+                                    <span>Nintendo Wii, PS4, XBox 360</span>
+                                </div>
+                            </div>
+
+                            <!-- Single Post Widget -->
+                            <div class="single-post-area d-flex">
+                                <div class="blog-thumbnail">
+                                    <img src="../../template/assets/img/bg-img/20.jpg" alt="">
+                                </div>
+                                <div class="blog-content">
+                                    <a href="#" class="post-title">Gaming at a new lever: 2018 new release</a>
+                                    <span>Nintendo Wii, PS4, XBox 360</span>
+                                </div>
+                            </div>
+
+                            <!-- Single Post Widget -->
+                            <div class="single-post-area d-flex">
+                                <div class="blog-thumbnail">
+                                    <img src="../../template/assets/img/bg-img/21.jpg" alt="">
+                                </div>
+                                <div class="blog-content">
+                                    <a href="#" class="post-title">2018 Comicon: See the lastest news</a>
+                                    <span>Nintendo Wii, PS4, XBox 360</span>
+                                </div>
+                            </div>
+
+                            <!-- Single Post Widget -->
+                            <div class="single-post-area d-flex">
+                                <div class="blog-thumbnail">
+                                    <img src="../../template/assets/img/bg-img/22.jpg" alt="">
+                                </div>
+                                <div class="blog-content">
+                                    <a href="#" class="post-title">New to gaming? Here are some tips</a>
+                                    <span>Nintendo Wii, PS4, XBox 360</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Articles Area End ##### -->
+
+    <!-- ##### Featured Articles Area Start ##### -->
+    <section class="featured-articles-area section-padding-100-0 bg-img bg-pattern bg-fixed" style="background-image: url(../../template/assets/img/bg-img/5.jpg);">
+        <div class="container">
+            <div class="row">
+                <!-- Article Thumbnail -->
+                <div class="col-12 col-lg-6">
+                    <div class="article-thumbnail mb-100">
+                        <img src="../../template/assets/img/bg-img/4.jpg" alt="">
+                    </div>
+                </div>
+                <!-- Article Content -->
+                <div class="col-12 col-lg-6">
+                    <div class="article-content mb-100">
+                        <a href="single-post.html" class="post-title">Sony’s new releases for 2018</a>
+                        <div class="post-meta">
+                            <a href="#" class="post-date">July 12, 2018</a>
+                            <a href="#" class="post-comments">2 Comments</a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris velit arcu, scelerisque dignissim massa quis, mattis facilisis erat. Aliquam erat volutpat. Sed efficitur diam. Eenean ut eros in ligula mollis lacinia eu in metus. In diam leo, convallis id nisi sed, mollis malesuada arcu. Aenean nisi tellus, posuere quis quam nec, mattis tempor dui. Suspendisse non ante mollis, fermentum erat non, fermentum neque. Phasellus vulputate, odio sit amet rhoncus interdum, est est condimentum velit, non condimentum lectus sapien id ante. Nullam sed quam hendrerit, cursus augue at, ultricies erat. Nulla sed pharetra ligula.</p>
+                        <a href="#" class="btn egames-btn mt-50">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Featured Articles Area End ##### -->
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <!-- Main Footer Area -->
+        <div class="main-footer-area section-padding-100-0">
+            <div class="container">
+                <div class="row">
+                    <!-- Single Footer Widget -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-70">
+                            <div class="widget-title">
+                                <a href="universalpasswd.html"><img src="../../template/assets/img/core-img/logo2.png" alt=""></a>
+                            </div>
+                            <div class="widget-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris velit arcu, scelerisque dignissim massa quis, mattis facilisis erat. Aliquam erat volutpat. Sed efficitur diam ut interdum ultricies.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Footer Widget -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-70">
+                            <div class="widget-title">
+                                <h4>Game Reviews</h4>
+                            </div>
+                            <div class="widget-content">
+                                <nav>
+                                    <ul>
+                                        <li><a href="#">Doom</a></li>
+                                        <li><a href="#">Grand Theft Auto</a></li>
+                                        <li><a href="#">Bloodborne</a></li>
+                                        <li><a href="#">God of war</a></li>
+                                        <li><a href="#">Persona 5</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Footer Widget -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-70">
+                            <div class="widget-title">
+                                <h4>Usefull Links</h4>
+                            </div>
+                            <div class="widget-content">
+                                <nav>
+                                    <ul>
+                                        <li><a href="#">Testimanials</a></li>
+                                        <li><a href="#">Reviews</a></li>
+                                        <li><a href="#">New Games</a></li>
+                                        <li><a href="#">Forum</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Footer Widget -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-70">
+                            <div class="widget-title">
+                                <h4>What’s new</h4>
+                            </div>
+                            <div class="widget-content">
+                                <nav>
+                                    <ul>
+                                        <li><a href="#">Doom</a></li>
+                                        <li><a href="#">Grand Theft Auto</a></li>
+                                        <li><a href="#">Bloodborne</a></li>
+                                        <li><a href="#">God of war</a></li>
+                                        <li><a href="#">Persona 5</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copywrite Area -->
+        <div class="copywrite-content">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12 col-sm-5">
+                        <!-- Copywrite Text -->
+                        <p class="copywrite-text"><a href="#">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> - Colorlib All rights reserved | More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a>
+
+</p>
+                    </div>
+                    <div class="col-12 col-sm-7">
+                        <!-- Footer Nav -->
+                        <div class="footer-nav">
+                            <ul>
+                                <li><a href="universalpasswd.html">Home</a></li>
+                                <li><a href="game-review.html">Games</a></li>
+                                <li><a href="post-injection.html">Articles</a></li>
+                                <li><a href="single-game-review.html">Reviews</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area End ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="../../template/assets/js/jquery.min.js"></script>
+    <!-- Popper js -->
+    <script src="../../template/assets/js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="../../template/assets/js/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="../../template/assets/js/plugins.js"></script>
+    <!-- Active js -->
+    <script src="../../template/assets/js/active.js"></script>
+</body>
+
+</html>

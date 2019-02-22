@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../template/assets/layui/css/layui.css">
+</head>
+<body>
+<div class="layui-container">
+    <form action="" method="post" class="layui-form" style="position: absolute; left: 10%; right: 10%; top: 10%; bottom: 10%;">
+        <input type="text" hidden="hidden" name="id" value="<?php echo '$id'; ?>">
+        <div class="layui-form-item">
+            <label class="layui-form-label">旧密码：</label>
+            <div class="layui-inline">
+                <input type="text" class="layui-input-inline" name="oldPassword">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">新密码：</label>
+            <div class="layui-inline">
+                <input type="text" class="layui-input-inline" name="newPassword">
+            </div>
+        </div>
+
+        <button class="layui-btn">提交</button>
+</div>
+</form>
+</body>
+
+<script src="../../template/assets/layui/layui.js"></script>
+</html>

@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- bootstrap-css -->
+<link href="../../template/xss_2/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!--// bootstrap-css -->
+<!-- css -->
+<link rel="stylesheet" href="../../template/xss_2/css/style.css" type="text/css" media="all" />
+<!--// css -->
+<!-- font-awesome icons -->
+<link href="../../template/xss_2/css/font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome icons -->
+<!-- gallery -->
+<link type="text/css" rel="stylesheet" href="../../template/xss_2/css/cm-overlay.css" />
+<!-- //gallery -->
+<!-- font -->
+<link href="http://fonts.googleapis.com/css?family=Kaushan+Script&amp;subset=latin-ext" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+<!-- //font -->
+<script src="../../template/xss_2/js/jquery-1.11.1.min.js"></script>
+<script src="../../template/xss_2/js/bootstrap.js"></script>
+<script src="../../template/xss_2/js/SmoothScroll.min.js"></script>
+<script src="../../template/xss_2/js/jarallax.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+</head>
+<body>
+	<!-- banner -->
+	<div class="banner" id="home">
+		<div class="banner-dot">
+			<div class="header-top">
+				<div class="container banner-drop">
+					<div class="agile-logo">
+						<h1><a href="universalpasswd.html">Go Hiking</a></h1>
+					</div>
+					<div class="header-right">
+						<nav>
+							<ul>
+								<li class="active">
+									<a href="universalpasswd.html"><span>Home</span></a>
+								</li>
+								<li>
+									<a href="#about" class="scroll"><span>About</span></a>
+								</li>
+								<li>
+									<a href="#services" class="scroll"><span>Services</span></a>
+								</li>
+								<li>
+									<a href="#gallery" class="scroll"><span>Gallery</span></a>
+								</li>
+								<li>
+									<a href="#blog" class="scroll"><span>Blog</span></a>
+								</li>
+								<li>
+									<a href="#team" class="scroll"><span>Team</span></a>
+								</li>
+								<li>
+									<a href="#contact" class="scroll"><span>Contact Us</span></a>
+								</li>
+							</ul>
+						</nav>
+						<div class="menu-icon"><span></span></div>
+					</div>
+					<div class="clearfix"> </div>
+					<script>
+						(function($){
+							$(".menu-icon").on("click", function(){
+								$(this).toggleClass("open");
+								$(".container").toggleClass("nav-open");
+								$("nav ul li").toggleClass("animate");
+							});
+							  
+						})(jQuery);
+					</script>
+				</div>
+			</div>
+			<div class="w3layouts-slider">
+				<div class="container">
+					<div class="slider">
+						<div class="callbacks_container">
+							<ul class="rslides callbacks callbacks1" id="slider4">
+								<li>	
+									<div class="wthree-banner-grids">
+										<div class="col-md-6 agileits-banner-left">
+											<h3>Lorem ipsum</h3>
+											<h4>consectetur</h4>
+										</div>
+										<div class="col-md-6 agileinfo-banner-right">
+											<p>Quisque sed lacinia diam. In nibh dui, congue a lacinia quis, egestas a erat. Nam commodo, leo vitae aliquet luctus</p>
+											<div class="banner-border"> </div>
+											<div class="w3-button">
+												<a href="#" data-toggle="modal" data-target="#myModal">Read More</a>
+											</div>
+										</div>
+										<div class="clearfix"> </div>
+									</div>
+								</li>
+								<li>	
+									<div class="wthree-banner-grids">
+										<div class="col-md-6 agileits-banner-left">
+											<h3>Quisque sed</h3>
+											<h4>adipiscing </h4>
+										</div>
+										<div class="col-md-6 agileinfo-banner-right">
+											<p>Integer sit amet sapien arcu. Nam luctus sagittis dignissim. Phasellus venenatis vehicula mollis. Aliquam id neque et sem</p>
+											<div class="banner-border"> </div>
+											<div class="w3-button">
+												<a href="#" data-toggle="modal" data-target="#myModal">Read More</a>
+											</div>
+										</div>
+										<div class="clearfix"> </div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<script src="../../template/xss_2/js/responsiveslides.min.js"></script>
+						<script>
+							// You can also use "$(window).load(function() {"
+							$(function () {
+							  // Slideshow 4
+							  $("#slider4").responsiveSlides({
+								auto: true,
+								pager:true,
+								nav:true,
+								speed: 500,
+								namespace: "callbacks",
+								before: function () {
+								  $('.events').append("<li>before event fired.</li>");
+								},
+								after: function () {
+								  $('.events').append("<li>after event fired.</li>");
+								}
+							  });
+						
+							});
+						 </script>
+						<!--banner Slider starts Here-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //banner -->
+	<!-- modal -->
+	<div class="modal about-modal fade" id="myModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header"> 
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+						<h4 class="modal-title">Go Hiking</h4>
+					</div> 
+					<div class="modal-body">
+					<div class="agileits-w3layouts-info">
+						<img src="../../template/xss_2/images/1.jpg" alt="" />
+						<p>Duis venenatis, turpis eu bibendum porttitor, sapien quam ultricies tellus, ac rhoncus risus odio eget nunc. Pellentesque ac fermentum diam. Integer eu facilisis nunc, a iaculis felis. Pellentesque pellentesque tempor enim, in dapibus turpis porttitor quis. Suspendisse ultrices hendrerit massa. Nam id metus id tellus ultrices ullamcorper.  Cras tempor massa luctus, varius lacus sit amet, blandit lorem. Duis auctor in tortor sed tristique. Proin sed finibus sem.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //modal -->
+	<!-- about -->
+	<div class="about" id="about">
+		<div class="col-md-6 w3-agileits-about-left">
+			
+		</div>
+		<div class="col-md-6 agile-about-right">
+			<h2>ABout Us</h2>
+			<h5>Nam id sem ut sem tristique egestas. Vivamus vitae felis commodo, placerat lacus in, mattis urna.</h5>
+			<p>Nulla consectetur mi non lectus tempus, sit amet posuere quam dignissim. Donec varius augue quis convallis tincidunt. Nullam turpis nisi, commodo eu viverra et, tempus cursus diam. Donec blandit eu erat et molestie. Ut vel lorem fringilla, tempus libero in, aliquet urna. Etiam vehicula tempus risus. <span>Fusce facilisis quam tortor, sed finibus enim imperdiet sit amet. Pellentesque ullamcorper vel enim nec vestibulum. Nam egestas id lorem in pharetra. Morbi congue elit sit amet urna varius viverra. In accumsan pulvinar nisi, id placerat lacus malesuada at. Nullam finibus dui id tortor efficitur scelerisque.</span></p>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	<!-- //about -->
+	<!-- services -->
+	<div class="services" id="services">
+		<div class="container">
+			<div class="services-top">
+				<div class="col-md-6 services-top-left">
+					<h3>Services</h3>
+					<h5>Some of our services</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+				<div class="col-md-6 services-top-right">
+					<div class="services-icons">
+						<div class="col-sm-6 services-grid">
+							<div class="services-grid-icon">
+								<i class="fa fa-cogs" aria-hidden="true"></i>
+								<p>Phasellus venenatis</p>
+							</div>
+						</div>
+						<div class="col-sm-6 services-grid">
+							<div class="services-grid-icon">
+								<i class="fa fa-thumbs-up" aria-hidden="true"></i>
+								<p>Phasellus venenatis</p>
+							</div>
+						</div>
+							<div class="clearfix"> </div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="w3-agile-services-grids">
+				<div class="col-md-6 services-left">
+					<div class="services-icons">
+						<div class="col-sm-6 services-grid">
+							<div class="services-grid-icon">
+								<i class="fa fa-comments" aria-hidden="true"></i>
+								<p>Phasellus venenatis</p>
+							</div>
+						</div>
+						<div class="col-sm-6 services-grid">
+							<div class="services-grid-icon">
+								<i class="fa fa-certificate" aria-hidden="true"></i>
+								<p>Phasellus venenatis</p>
+							</div>
+						</div>
+							<div class="clearfix"> </div>
+					</div>
+					<div class="services-icons services-icons-bottom">
+						<div class="col-sm-6 services-grid">
+							<div class="services-grid-icon">
+								<i class="fa fa-user" aria-hidden="true"></i>
+								<p>Phasellus venenatis</p>
+							</div>
+						</div>
+						<div class="col-sm-6 services-grid">
+							<div class="services-grid-icon">
+								<i class="fa fa-road" aria-hidden="true"></i>
+								<p>Phasellus venenatis</p>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<div class="col-md-6 services-left">
+					<div class="services-icons">
+						<div class="col-sm-6 services-grid">
+							<div class="services-grid-icon">
+								<i class="fa fa-bell" aria-hidden="true"></i>
+								<p>Phasellus venenatis</p>
+							</div>
+						</div>
+						<div class="col-sm-6 services-grid">
+							<div class="services-grid-icon">
+								<i class="fa fa-asterisk" aria-hidden="true"></i>
+								<p>Phasellus venenatis</p>
+							</div>
+						</div>
+							<div class="clearfix"> </div>
+					</div>
+					<div class="services-icons services-icons-bottom">
+						<div class="col-sm-6 services-grid">
+							<div class="services-grid-icon">
+								<i class="fa fa-anchor" aria-hidden="true"></i>
+								<p>Phasellus venenatis</p>
+							</div>
+						</div>
+						<div class="col-sm-6 services-grid">
+							<div class="services-grid-icon">
+								<i class="fa fa-cog" aria-hidden="true"></i>
+								<p>Phasellus venenatis</p>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //services -->
+	<div class="tlinks">Collect from <a href="http://www.cssmoban.com/" >手机网站模板</a></div>
+	<!-- gallery -->
+	<div class="gallery" id="gallery">
+		<div class="container">
+			<div class="w3ls-heading">
+				<h3>Gallery</h3>
+				<h5>Our Images</h5>
+			</div>
+		</div>
+		<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+					<ul id="myTab" class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active"><a href="#home-main" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">All</a></li>
+						<li role="presentation"><a href="#learning" role="tab" id="learning-tab" data-toggle="tab" aria-controls="learning">Everyday</a></li>
+						<li role="presentation"><a href="#playing" role="tab" id="playing-tab" data-toggle="tab" aria-controls="playing">Occasion</a></li>
+						<li role="presentation"><a href="#painting" role="tab" id="painting-tab" data-toggle="tab" aria-controls="painting">Trending</a></li>
+						<li role="presentation"><a href="#school" role="tab" id="school-tab" data-toggle="tab" aria-controls="school">Accessories</a></li>
+					</ul>
+					<div id="myTabContent" class="tab-content">
+						<div role="tabpanel" class="tab-pane fade in active" id="home-main" aria-labelledby="home-tab">
+							<div class="w3_tab_img">
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="../../template/xss_2/images/2.jpg">
+										  <figure class="imghvr-shutter-in-out-diag-2"><img src="../../template/xss_2/images/2.jpg" alt=" " class="img-responsive" />
+										  </figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="../../template/xss_2/images/3.jpg">
+										  <figure class="imghvr-shutter-in-out-diag-2"><img src="../../template/xss_2/images/3.jpg" alt=" " class="img-responsive" />
+										  </figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="../../template/xss_2/images/4.jpg">
+										  <figure class="imghvr-shutter-in-out-diag-2"><img src="../../template/xss_2/images/4.jpg" alt=" " class="img-responsive" />
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="../../template/xss_2/images/5.jpg">
+										  <figure class="imghvr-shutter-in-out-diag-2"><img src="../../template/xss_2/images/5.jpg" alt=" " class="img-responsive" />
+										</figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="../../template/xss_2/images/6.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="../../template/xss_2/images/6.jpg" alt=" " class="img-responsive" />
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="../../template/xss_2/images/7.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="../../template/xss_2/images/7.jpg" alt=" " class="img-responsive" />
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="../../template/xss_2/images/8.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="../../template/xss_2/images/8.jpg" alt=" " class="img-responsive" />
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="../../template/xss_2/images/9.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="../../template/xss_2/images/9.jpg" alt=" " class="img-responsive" />
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="learning" aria-labelledby="learning-tab">
+							<div class="w3_tab_img">
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="../../template/xss_2/images/2.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="../../template/xss_2/images/2.jpg" alt=" " class="img-responsive">
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="../../template/xss_2/images/3.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="../../template/xss_2/images/3.jpg" alt=" " class="img-responsive">
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="playing" aria-labelledby="playing-tab">
+							<div class="w3_tab_img">
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="../../template/xss_2/images/4.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="../../template/xss_2/images/4.jpg" alt=" " class="img-responsive">
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="../../template/xss_2/images/5.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="../../template/xss_2/images/5.jpg" alt=" " class="img-responsive">
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="../../template/xss_2/images/6.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="../../template/xss_2/images/6.jpg" alt=" " class="img-responsive">
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="../../template/xss_2/images/7.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="../../template/xss_2/images/7.jpg" alt=" " class="img-responsive">
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="painting" aria-labelledby="painting-tab">
+							<div class="w3_tab_img">
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="../../template/xss_2/images/8.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="../../template/xss_2/images/8.jpg" alt=" " class="img-responsive">
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="../../template/xss_2/images/9.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="../../template/xss_2/images/9.jpg" alt=" " class="img-responsive">
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="../../template/xss_2/images/2.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="../../template/xss_2/images/2.jpg" alt=" " class="img-responsive">
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="school" aria-labelledby="school-tab">
+							<div class="w3_tab_img">
+								<div class="col-md-3 w3_tab_img_left">
+									<div class="demo">
+										<a class="cm-overlay" href="../../template/xss_2/images/3.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="../../template/xss_2/images/3.jpg" alt=" " class="img-responsive">
+											</figure>
+										</a>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+					</div>
+			</div>
+			<script src="../../template/xss_2/js/jquery.tools.min.js"></script>
+			<script src="../../template/xss_2/js/jquery.mobile.custom.min.js"></script>
+			<script src="../../template/xss_2/js/jquery.cm-overlay.js"></script>
+			<script>
+				$(document).ready(function(){
+					$('.cm-overlay').cmOverlay();
+				});
+			</script>
+	</div>
+	<!-- //gallery -->
+	<!-- blog -->
+	<div class="blog" id="blog">
+		<div class="container">
+			<div class="w3ls-heading">
+				<h3>Blog</h3>
+				<h5>Our Blog Posts</h5>
+			</div>
+			<div class="agile-blog-grids">
+				<div class="col-md-4 agile-blog-grid">
+					<div class="agile-blog-grid-img">
+						<a href="#" data-toggle="modal" data-target="#myModal"><img src="../../template/xss_2/images/5.jpg" alt="" /></a>
+						<a href="#" data-toggle="modal" data-target="#myModal">Sed odio mauris, pulvinar vel diam at, consectetur auctor sapien.</a>
+						<p>Posted By <a href="#">Admin</a> &nbsp;&nbsp; on Sept 24, 2016 &nbsp;&nbsp; <a href="#">Comments (07)</a></p>
+					</div>
+					<div class="agile-blog-grid-info">
+						<p>Phasellus interdum mi et volutpat tincidunt. Vivamus imperdiet, sem at eleifend consectetur, elit lorem consequat odio, sit amet maximus mi diam pulvinar arcu.</p>
+					</div>
+				</div>
+				<div class="col-md-4 agile-blog-grid">
+					<div class="agile-blog-grid-img">
+						<a href="#" data-toggle="modal" data-target="#myModal"><img src="../../template/xss_2/images/2.jpg" alt="" /></a>
+						<a href="#" data-toggle="modal" data-target="#myModal">Aliquam ut nisi pulvinar, ultricies magna sit amet, hendrerit orci.</a>
+						<p>Posted By <a href="#">Admin</a> &nbsp;&nbsp; on Oct 26, 2016 &nbsp;&nbsp; <a href="#">Comments (10)</a></p>
+					</div>
+					<div class="agile-blog-grid-info">
+						<p>Phasellus interdum mi et volutpat tincidunt. Vivamus imperdiet, sem at eleifend consectetur, elit lorem consequat odio, sit amet maximus mi diam pulvinar arcu.</p>
+					</div>
+				</div>
+				<div class="col-md-4 agile-blog-grid">
+					<div class="agile-blog-grid-img">
+						<a href="#" data-toggle="modal" data-target="#myModal"><img src="../../template/xss_2/images/3.jpg" alt="" /></a>
+						<a href="#" data-toggle="modal" data-target="#myModal">Cum sociis natoque penatibus et magnis dis parturient montes</a>
+						<p>Posted By <a href="#">Admin</a> &nbsp;&nbsp; on Nov 08, 2016 &nbsp;&nbsp; <a href="#">Comments (15)</a></p>
+					</div>
+					<div class="agile-blog-grid-info">
+						<p>Phasellus interdum mi et volutpat tincidunt. Vivamus imperdiet, sem at eleifend consectetur, elit lorem consequat odio, sit amet maximus mi diam pulvinar arcu.</p>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //blog -->
+	<!-- team -->
+	<div class="team" id="team">
+		<div class="container">
+			<div class="w3ls-heading">
+				<h3>Team</h3>
+				<h5>Meet Our Team</h5>
+			</div>
+			<div class="agileinfo-team-grids">
+				<div class="col-md-3 wthree-team-grid">
+					<img src="../../template/xss_2/images/t1.jpg" alt="">
+					<div class="wthree-team-grid-info">
+						<h4>Mary Jane</h4>
+						<p>Vestibulum</p>
+						<div class="team-social-grids">
+							<ul>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-rss"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 wthree-team-grid">
+					<img src="../../template/xss_2/images/t2.jpg" alt="">
+					<div class="wthree-team-grid-info">
+						<h4>Peter Parke</h4>
+						<p>Vestibulum</p>
+						<div class="team-social-grids">
+							<ul>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-rss"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 wthree-team-grid">
+					<img src="../../template/xss_2/images/t3.jpg" alt="">
+					<div class="wthree-team-grid-info">
+						<h4>Jennifer Watson</h4>
+						<p>Vestibulum</p>
+						<div class="team-social-grids">
+							<ul>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-rss"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 wthree-team-grid">
+					<img src="../../template/xss_2/images/t4.jpg" alt="">
+					<div class="wthree-team-grid-info">
+						<h4>Steven Wilson</h4>
+						<p>Vestibulum</p>
+						<div class="team-social-grids">
+							<ul>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-rss"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //team -->
+	<!-- contact -->
+	<div class="contact" id="contact">
+		<div class="container">
+			<div class="w3ls-heading">
+				<h3>Contact</h3>
+				<h5>Get In Touch</h5>
+			</div>
+			<div class="contact-form">
+				<form action="" method="post">
+					<!--<input type="text" placeholder="姓名" required="">-->
+					<!--<input type="email" placeholder="邮件" required="">-->
+					<!--<input type="text" placeholder="电话" required="">-->
+					<textarea placeholder="留言" name="message" required></textarea>
+					<input type="submit" value="提交">
+				</form>
+			</div>
+		</div>
+	</div>
+	<?php
+						while($row = mysqli_fetch_assoc($res1)){
+							echo $row['content'].'<br>';
+	}
+	?>
+	<!-- //contact -->
+	<!-- map -->
+	<!---<div class="agileits-w3layouts-map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d396368.6856440282!2d-94.85590815170958!3d39.09211671179677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c0f75eafe99997%3A0x558525e66aaa51a2!2sKansas+City%2C+MO%2C+USA!5e0!3m2!1sen!2sin!4v1477900730949" allowfullscreen></iframe>
+	</div>--->
+	<!-- map -->
+	<!-- footer -->
+	<footer>
+		<div class="container">
+			<div class="footer-grids">
+				<div class="col-md-4 footer-grid">
+					<h4>Menu</h4>
+					<div class="col-md-6 footer-grid-left">
+						<ul>
+							<li>
+								<a href="#home" class="scroll">Home</a>
+							</li>
+							<li>
+								<a href="#about" class="scroll">About</a>
+							</li>
+							<li>
+								<a href="#services" class="scroll">Services</a>
+							</li>
+							<li>
+								<a href="#gallery" class="scroll">Gallery</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-6 footer-grid-left">
+						<ul>
+							<li>
+								<a href="#blog" class="scroll">Blog</a>
+							</li>
+							<li>
+								<a href="#team" class="scroll">Team</a>
+							</li>
+							<li>
+								<a href="#contact" class="scroll">Contact Us</a>
+							</li>
+						</ul>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-4 footer-grid">
+					<h4>Contact Us</h4>
+					<ul>
+						<li><span>Location : </span>Broome St, NY 10002, Kansas City.</li>
+						<li><span>Phone : </span> +01 111 222 3333</li>
+						<li><span>Email : </span><a href="mailto:example@email.com">mail@example.com</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4 footer-grid">
+					<h4>Newsletter</h4>
+					<p>Subscribe With Us</p>
+
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</footer>
+	<!-- //footer -->
+	<!-- copyright -->
+	<div class="copyright">
+		<div class="container">
+			<p>Copyright &copy; 2017.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+		</div>
+	</div>
+	<!-- //copyright -->
+	<script type="text/javascript" src="../../template/xss_2/js/move-top.js"></script>
+	<script type="text/javascript" src="../../template/xss_2/js/easing.js"></script>
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+
+</body>	
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>系统登录</title>
+<link href="../../template/wn_passwd/css/login.css" rel="stylesheet" rev="stylesheet" type="text/css" media="all" />
+<link href="../../template/wn_passwd/css/demo.css" rel="stylesheet" rev="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="../../template/wn_passwd/js/jquery1.42.min.js"></script>
+<script type="text/javascript" src="../../template/wn_passwd/js/jquery.SuperSlide.js"></script>
+<script type="text/javascript" src="../../template/wn_passwd/js/Validform_v5.3.2_min.js"></script>
+
+<script>
+$(function() {
+
+	$(".i-text").focus(function () {
+		$(this).addClass('h-light');
+	});
+
+	$(".i-text").focusout(function () {
+		$(this).removeClass('h-light');
+	});
+
+})
+
+</script>
+
+
+</head>
+
+<body>
+
+
+<div class="header">
+  <h1 class="headerLogo"><a title="后台管理系统" target="_blank" href="#"><img alt="logo" src="../../template/wn_passwd/images/logo.gif"></a></h1>
+	<div class="headerNav">
+		
+	</div>
+</div>
+
+<div class="banner">
+
+<div class="login-aside">
+  <div id="o-box-up"></div>
+  <div id="o-box-down"  style="table-layout:fixed;">
+   <div class="error-box"></div>
+   
+   <form class="registerform"action="" method="post">
+   <div class="fm-item">
+	   <label  class="form-label">MISS系统登陆：</label>
+	   <input type="text" name="username" class="i-text" >
+  </div>
+  
+  <div class="fm-item">
+	   <label  class="form-label">登陆密码：</label>
+	   <input type="password" name="password" class="i-text" >
+  </div>
+  
+  
+  <div class="fm-item">
+	   <label class="form-label"></label>
+	   <input type="submit" value="" tabindex="4" id="send-btn" class="btn-login"> 
+       <div class="ui-form-explain"></div>
+  </div>
+  
+  </form>
+  
+  </div>
+
+</div>
+
+	<div class="bd">
+		<ul>
+			<li style="background:url(../../template/wn_passwd/themes/theme-pic1.jpg) #CCE1F3 center 0 no-repeat;"></li>
+			<li style="background:url(../../template/wn_passwd/themes/theme-pic2.jpg) #BCE0FF center 0 no-repeat;"></li>
+		</ul>
+	</div>
+
+	<div class="hd"><ul></ul></div>
+</div>
+<script type="text/javascript">jQuery(".banner").slide({ titCell:".hd ul", mainCell:".bd ul", effect:"fold",  autoPlay:true, autoPage:true, trigger:"click" });</script>
+
+
+<div class="banner-shadow"></div>
+
+
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Webug 靶场</title>
+    <meta name="description" content="这是一个 index 页面">
+    <meta name="keywords" content="index">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="icon" type="image/png" href="../template/assets/i/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="../template/assets/i/app-icon72x72@2x.png">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <link rel="stylesheet" href="../template/assets/css/amazeui.min.css"/>
+    <link rel="stylesheet" href="../template/assets/css/admin.css">
+    <link rel="stylesheet" href="../template/assets/css/app.css">
+    <!--<link rel="stylesheet" href="assets/layui/css/layui.css">-->
+    <style type="text/css">
+        a{
+            color: #7c7c7c;
+            transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+            -o-transition: all 0.5s;
+        }
+
+        .oneBox{
+            font-size: 16px;
+            overflow: hidden;
+            color: #7c7c7c;
+            line-height: 46px;
+            border-bottom: 1px solid #e0e7eb;
+        }
+        .type-title{
+            width: 80px;
+            color: #9aabb8;
+            margin-right: 44px;
+            text-align: left;
+        }
+        .all{
+            width: 62px;
+            margin-right: 28px;
+        }
+        .chooseBox div.oneBox div.choose {
+            display: inline-block;
+            margin-top: -8px;
+        }
+
+        .choose a {
+            margin-right: 30px;
+            margin-bottom: 7px;
+            color: #7c7c7c;
+            padding: 8px 15px;
+        }
+        .oneBox .active{
+            background-color: #3498db;
+            color: #fff !important;
+        }
+        .chooseBox .oneBox a {
+            padding: 8px 15px;
+        }
+    </style>
+</head>
+
+<body data-type="generalComponents">
+
+<header class="am-topbar am-topbar-inverse admin-header">
+    <div class="am-topbar-brand">
+        <span  style="color: green;">WeBug</span>
+    </div>
+    <div class="am-icon-list tpl-header-nav-hover-ico am-fl am-margin-right">
+    </div>
+    <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only"
+            data-am-collapse="{target: '#topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span
+            class="am-icon-bars"></span></button>
+    <div class="am-collapse am-topbar-collapse" id="topbar-collapse">
+        <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list tpl-header-list">
+            <li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>
+                <a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">
+                    <span class="tpl-header-list-user-nick">
+                    </span><span class="tpl-header-list-user-ico"> <img
+                        src="../template/assets/img/user01.png"></span>
+                </a>
+            </li>
+            <li><a href="../control/logout.php" class="tpl-header-list-link"><span class="am-icon-sign-out tpl-header-list-ico-out-size"></span></a></li>
+        </ul>
+    </div>
+</header>
+<div class="tpl-page-container tpl-page-header-fixed">
+    <div class="tpl-left-nav tpl-left-nav-hover">
+        <div class="tpl-left-nav-title">
+            靶场列表
+        </div>
+        <div class="tpl-left-nav-list">
+            <ul class="tpl-left-nav-menu">
+                <li class="tpl-left-nav-item">
+                    <a href="javascript:;" class="nav-link tpl-left-nav-link-list ">
+                        <i class="am-icon-table"></i>
+                        <span>靶场</span>
+                        <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right tpl-left-nav-more-ico-rotate"></i>
+                    </a>
+                    <ul class="tpl-left-nav-sub-menu" style="display: block">
+                        <li>
+                            <a href="/control/we_bug_env.php">
+                                <i class="am-icon-angle-right"></i>
+                                <span>web靶场</span>
+                                <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="am-icon-angle-right"></i>
+                                <span>cms靶场</span>
+                                <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/template/ctf.html">
+                                <i class="am-icon-angle-right"></i>
+                                <span>CTF</span>
+                                <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="tpl-left-nav-item">
+                    <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                        <i class="am-icon-wpforms"></i>
+                        <span>知识库</span>
+                        <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
+                    </a>
+                    <ul class="tpl-left-nav-sub-menu">
+                        <li>
+                            <a href="/template/knowledgeBase.html">
+                                <i class="am-icon-angle-right"></i>
+                                <span>乌云知识库</span>
+                                <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="tpl-left-nav-item">
+                    <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                        <i class="am-icon-wpforms"></i>
+                        <span>其他</span>
+                        <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
+                    </a>
+                    <ul class="tpl-left-nav-sub-menu">
+                        <li>
+                            <a href="/template/md5.html">
+                                <i class="am-icon-angle-right"></i>
+                                <span>md5</span>
+                                <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/template/job.html">
+                                <i class="am-icon-angle-right"></i>
+                                <span>招聘</span>
+                                <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="tpl-left-nav-item">
+                    <a href="/template/aboutUs.html" class="nav-link tpl-left-nav-link-list">
+                        <i class="am-icon-wpforms"></i>
+                        <span>关于我们</span>
+                        <i class=" tpl-left-nav-more-ico am-fr am-margin-right"></i>
+                    </a>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="tpl-content-wrapper" style="padding-top: 0">
+        <div class="tpl-portlet-components">
+            <div class="portlet-title" style="margin-bottom: 0">
+                <div class="caption font-green bold">
+                    <span class="am-icon-code"></span> CTF
+                </div>
+
+            </div>
+            <div class="tpl-block">
+                <div class="chooseBox">
+                </div>
+                <div class="am-g">
+                    <div class="am-u-sm-12">
+                        模块正在开发中
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<script src="../template/assets/js/jquery.min.js"></script>
+<script src="../template/assets/js/amazeui.min.js"></script>
+<script src="../template/assets/js/app.js"></script>
+
+</body>
+
+</html>

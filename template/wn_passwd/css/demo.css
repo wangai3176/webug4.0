@@ -1,0 +1,148 @@
+﻿.fz12{font-size:12px;}
+.main{padding-bottom:60px; padding-top:36px;}
+.main h1,
+.main h2,
+.main h3{padding-left:10px;}
+.main h1{text-align:center;color: #212222; font-family: "microsoft yahei"; font-size: 36px; font-weight: normal; line-height: 2em; margin-bottom: 36px;}
+.main h2{background-color:#eee; line-height:2!important;}
+.main h3{font-size:20px; margin-bottom:10px;}
+.lireset2{padding-left:10px;}
+.registerform{margin-bottom:40px;}
+.registerform .need{
+	width:10px;
+	color:#b20202;
+}
+.registerform td{
+	padding:5px 0;
+	vertical-align:top;
+	text-align:left;
+}
+.registerform .inputxt,.registerform textarea{
+	border:1px solid #a5aeb6;
+	width:196px;
+	padding:4px 2px;
+}
+.registerform textarea{
+	height:75px;
+}
+
+.registerform .tip{
+	line-height:20px;
+	color:#5f6a72;
+}
+.registerform select{
+	width:202px;
+}
+.registerformalter select{
+	width:124px;
+}
+.swfupload{
+	vertical-align:top;
+}
+.passwordStrength{
+
+}
+.passwordStrength b{
+	font-weight:normal;
+}
+.passwordStrength b,.passwordStrength span{
+	display:inline-block; 
+	vertical-align:middle;
+	line-height:16px;
+	line-height:18px\9;
+	height:16px;
+}
+.passwordStrength span{
+	width:45px; 
+	text-align:center; 
+	background-color:#d0d0d0; 
+	border-right:1px solid #fff;
+}
+.passwordStrength .last{
+	border-right:none;
+}
+.passwordStrength .bgStrength{
+	color:#fff;
+	background-color:#71b83d;
+}
+#demo1 .passwordStrength{
+	margin-left:8px;
+}
+.tipmsg{
+	padding:0 10px;
+}
+
+
+
+.document{
+	min-height:800px;
+}
+.document .sidenav{
+	width:170px;
+	background-color:#eee;
+	padding:10px 10px 20px;
+}
+.document .sidenav h3{
+	font-size:14px;
+	padding:5px 10px;
+	background-color:#e1e1e1;
+}
+.document .sidenav a{
+	color:#1870a9;
+}
+.document .content{
+	width:750px;
+}
+.document .content dt{
+	background-color:#eee;
+    line-height:2;
+	padding:0 10px;
+}
+.document .content dt a{
+	color:#79a605;
+	padding:5px 0;
+	font-size:20px;
+	font-weight:bold;
+	display:block;
+}
+.document .content dt a:hover,
+.document .content h3 a:hover{text-decoration:none; cursor:default;}
+.document .content dd{
+	padding:15px 0;
+}
+.document .content h3{
+	color:#333;
+	font-size:16px;
+}
+.document .content p{
+	padding:0 0 16px 10px;
+	margin-bottom:0;
+}
+.document .content .intro{
+	margin-bottom:16px;
+}
+.document .content .intro p{
+	padding-bottom:0;
+}
+.document .content .intro pre{padding-left:10px;}
+.document .content .wp_syntax{
+	margin-left:10px;
+	margin-right:10px;
+}
+.document .sidenav .lireset2{padding-left:0;}
+.document .sidenav li ul{display:none;}
+
+.toTop {
+	display:block;
+	width:48px;
+	height:49px;
+	overflow:hidden;
+	text-indent:-20000px;
+	position:fixed;
+	right:15px;
+	bottom:20px;
+	display:none;
+	background:url(../images/totop.png) no-repeat;
+	_position:absolute;
+	_top:expression(documentElement.scrollTop+documentElement.clientHeight-this.offsetHeight-20);
+}

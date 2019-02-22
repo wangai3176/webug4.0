@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>个人资料--后台管理</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../template/assets/layui/css/layui.css" media="all"/>
+</head>
+<body class="childrenBody">
+<div class="user_left">
+    <input class="layui-hide" name="id"/>
+    <div class="layui-form-item">
+        <label class="layui-form-label">用户名</label>
+        <div class="layui-input-block">
+            <input type="text" name="loginName" disabled class="layui-input layui-disabled">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">昵称</label>
+        <div class="layui-input-block">
+            <input type="text" name="nickName" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">用户角色</label>
+        <div class="layui-input-block">
+            <input type="checkbox" disabled checked>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">手机号码</label>
+        <div class="layui-input-block">
+            <input type="tel" name="tel" placeholder="请输入手机号码" lay-verify="phone" class="layui-input userPhone">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">邮箱</label>
+        <div class="layui-input-block">
+            <input type="text" name="email" placeholder="请输入邮箱" lay-verify="email" class="layui-input userEmail">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">自我介绍</label>
+        <div class="layui-input-block">
+            <textarea placeholder="请输入内容" class="layui-textarea myself" name="remarks"></textarea>
+        </div>
+    </div>
+</div>
+
+<form action="" method="post" enctype="multipart/form-data">
+    <label>文件名:</label>
+    <input type="file"  name="file" id="file" onchange="type_filter(this.files)"/>
+    <input type="submit" class="layui-btn" name="submit" value="上传"/>
+</form>
+
+<script type="text/javascript" src="./../../template/assets/layui/layui.js"></script>
+<script type="application/javascript">
+    function type_filter(files) {
+        if (files[0].type.split("/")[0] == "image") {
+            return true;
+        } else {
+            document.getElementById("file").value = "";
+            alert("不允许上传该格式类型");
+            return false;
+        }
+    }
+</script>
+
+</body>
+</html>

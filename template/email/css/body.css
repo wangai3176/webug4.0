@@ -1,0 +1,46 @@
+@-webkit-keyframes animate-cloud {
+  from {
+    background-position: 600px 100%;
+  }
+  to {
+    background-position: 0 100%;
+  }
+}
+@-moz-keyframes animate-cloud {
+  from {
+    background-position: 600px 100%;
+  }
+  to {
+    background-position: 0 100%;
+  }
+}
+@-ms-keyframes animate-cloud {
+  from {
+    background-position: 600px 100%;
+  }
+  to {
+    background-position: 0 100%;
+  }
+}
+@-o-keyframes animate-cloud {
+  from {
+    background-position: 600px 100%;
+  }
+  to {
+    background-position: 0 100%;
+  }
+}
+
+html{
+	height: 100%;
+}
+body{
+   background:url(../images/cloud.jpg) 0 bottom repeat-x  #049ec4;
+  -webkit-animation: animate-cloud 20s linear infinite;
+  -moz-animation: animate-cloud 20s linear infinite;
+  -ms-animation: animate-cloud 20s linear infinite;
+  -o-animation: animate-cloud 20s linear infinite;
+  animation: animate-cloud 20s linear infinite;
+  width: 100%;
+  height: auto;
+}
