@@ -2,20 +2,11 @@
 
 webug官网：www.webug.org
 
-dome：曾梦想仗剑走天涯，看尽世间浮华，后来bug太多没去。
+# 安装说明:
+## 开发环境：`php`+`mysql`+`apache`
+推荐使用 **`PhpStudy`**(可能需要安装**[运行库](http://www.pc6.com/softview/SoftView_104246.html)**)集成多种环境
 
-开发环境：php+mysql+apache
+## 导入数据库
+在mysql数据库中分别创建`webug`、`webug_sys`、`webug_width_byte`库，然后将sql目录下的sql文件导入到相应的库下即可
 
-安装文档：还是移步百度云盘吧里面有个webug4.0的压缩包是安装教程以下
-
-
-百度网盘之前的链接已失效，百度网盘把所有公开的链接全都取消了，实属抱歉。
-2019-07-20更新
-链接：https://pan.baidu.com/s/1fVTQY2wuNCRTQu5-BnelEA 
-提取码：lmzc 
-
-
-以下链接已失效
-webug4.0资料：链接: https://pan.baidu.com/s/1WAhOJ8Z9_XEobfCQfQvVdA 提取码: 5yuw 
-
-
+## 将项目文件整个放到网站根目录下即可
