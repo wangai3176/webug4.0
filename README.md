@@ -18,4 +18,6 @@ dome：曾梦想仗剑走天涯，看尽世间浮华，后来bug太多没去。
 以下链接已失效
 webug4.0资料：链接: https://pan.baidu.com/s/1WAhOJ8Z9_XEobfCQfQvVdA 提取码: 5yuw 
 
+##致谢：怪大叔 霾 zhutouGG 协助开发
+
 
